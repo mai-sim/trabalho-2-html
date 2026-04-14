@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #f4f1ea;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+.section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+
+header {
+    background-color: #e8e2d6;
+    border-bottom: 2px solid #000;
+}
+
+.navbar {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    border-bottom: 1px solid black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: url('pexels-lebele-10254513.jpg') center/cover no-repeat;
+    color: white;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero h2,
+.hero p {
+    position: relative;
+}
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+.section img {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #000;
+}
+
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    border: 1px solid #000;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #000;
+    font-family: inherit;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #1a1a1a;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #000;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+}
+
+#contador {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #555;
+}
